@@ -43,7 +43,7 @@ rf_model.fit(X_train, y_train)
 # --- Crop Prices Fetch ---
 def get_crop_prices():
     try:
-        API_KEY = "579b464db66ec23bdd00000108e19cfc7e9a4b9168c53b7a8beb263a"
+        API_KEY = "579b464db66ec23bdd00000108e19cfc7e9a4b9168c53b7a8beb263a" 
         DATASET_ID = "9ef84268-d588-465a-a308-a864a43d0070"
         url = f"https://api.data.gov.in/resource/{DATASET_ID}?api-key={API_KEY}&format=json&limit=100"
         response = requests.get(url)
@@ -63,7 +63,7 @@ def get_crop_prices():
     return df.dropna()
 
 # --- Gemini AI Setup ---
-genai.configure(api_key="AIzaSyC0aqfKtOsYNFeHmsEQVMXek1ONb0wK9QM")
+genai.configure(api_key="AIzaSyC0aqfKtOsYNFeHms") #Replace with your own Gemini api key
 model = genai.GenerativeModel("gemini-2.0-flash")
 
 def query_gemini_model(question):

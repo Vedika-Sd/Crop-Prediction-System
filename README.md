@@ -43,12 +43,12 @@
 
 ## 📂 Project Structure
 
-├── app.py # Main application script 
-├── crop_data.csv # Dataset used for training 
-├── crop_price.csv # Fallback market price data 
-├── crop_pred.ipynb # Notebook used to try various models
-├── Animation.json # Lottie animation file 
-└── README.md # Project description
+-├── app.py # Main application script 
+-├── crop_data.csv # Dataset used for training 
+-├── crop_price.csv # Fallback market price data 
+-├── crop_pred.ipynb # Notebook used to try various models
+-├── Animation.json # Lottie animation file 
+-└── README.md # Project description
 
 ---
 
